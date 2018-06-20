@@ -21,6 +21,8 @@
                 
 
                 
+
+                
                 <?php /*
                 @if (Auth::user()->is_favorite($micropost->id))
                         <div class="btn-group">

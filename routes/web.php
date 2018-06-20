@@ -17,6 +17,10 @@ Route::get('/', 'EventsController@index');
 
 Route::resource('/', 'EventsController');
 Route::resource('events', 'EventsController');
+//Route::get('events', 'EventsController@index');
+//Route::get('events.show?title={id}', 'EventsController@show')->name('events.show');
+//Route::get('events.destroy', 'EventsController@destroy')->name('events.destroy');
+//Route::get('events.create', 'EventsController@create')->name('events.create');
 Route::get('events.top', 'EventsController@top')->name('events.top');
 Route::get('events.profile', 'EventsController@profile')->name('events.profile');
 
@@ -32,5 +36,6 @@ Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
 Route::post('login', 'Auth\LoginController@login')->name('login.post');
 Route::get('logout', 'Auth\LoginController@logout')->name('logout.get');
 
+//Route::get('events/{id}', 'MemberController@unsanka')->name('member.unsanka');
 Route::post('events/{id}', 'MemberController@sanka')->name('member.sanka');
-Route::delete('events/{id}', 'MemberController@unsanka')->name('member.unsanka');
+

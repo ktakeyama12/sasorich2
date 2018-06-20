@@ -63,13 +63,11 @@
                         <?php
                     }else{
                         ?>
-                            {!! Form::open(['route' => ['member.unsanka', $events->id], 'method' => 'delete']) !!}
+                            {!! Form::open(['route' => ['member.sanka', $events->id]]) !!}
                             {!! Form::submit('UNJOIN', ['class' => 'btn btn-warning btn-xs']) !!}
                             {!! Form::close() !!}
-                            <?php
-                        print ("joined");
-                    }
-                    ?>
+                    <?php } ?>
+
                 </div>
             </div>
            
